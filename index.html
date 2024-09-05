@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css | part1</title>
+    <style>
+        #judul {
+            color: darkolivegreen;
+        }
+        .deskrifsi {
+            color: cadetblue;
+            font-size: 20px;
+        }
+        div p {
+            color: olive;
+            font-size: 16px;
+            font-style: initial;
+        }
+        div +p {
+            color: darkseagreen;
+            font-size: 16px;
+            font-style: inherit;
+        }
+        #judul2 {
+            color: darkolivegreen;
+        }
+        p[title~="bunga"] {
+            color: aquamarine;
+            font-style: italic;
+        }
+        p[title|="flower"] {
+            color: cadetblue;
+        }
+        p[title^="daisy"] {
+            color: cornflowerblue;
+            font-family: serif;
+        }
+        #judul3 {
+            color: darkolivegreen;
+        }
+        div label {
+            color: plum;
+        }
+        a[target] {
+            color: darkslateblue;
+        }
+        .h4 {
+            color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="judul"> Daisy Flower </h1>
+    <p class="deskrifsi"><i>"Daes eage"</i> yang berarti <i>"mata hari"</i></p>
+
+    <div>
+        <article>
+            <p>ini Mencerminkan bagaimana bunga daisy</p>
+        </article>
+            <p>munutup kelopaknya pada malam hari dan</p>
+    </div>
+    <p>membuka kembali pada pagi hari.</p>
+    <br>
+    
+    <h3 id="judul2">Jenis Jenis Bunga Daisy</h3>
+        <p title="bunga">1. English Daisy</p>
+        <p title="bunga">2. Gerbera Daisy</p>
+        <p title="flower">3. African Daisy</p>
+        <p title="flower">4. Shasta Daisy</p>
+        <p title="daisy">5. Swan River Daisy</p>
+        <p title="daisy">6. Argyranthemum</p>
+        <p title="daisy">7. Dimorphotheca</p>
+
+    <h4 id="judul3">Pilih bunga yang kamu suka</h4>
+    <div>
+    <label for="bunga"> Bunga daisy : </label>
+    <br>
+    <input type="radio">
+    <label for="English Daisy">English Daisy </label>
+     <br>
+    <input type="radio">
+    <label for="Gerbera Daisy">Gerbera Daisy </label>
+    <br>
+    <input type="radio">
+    <label for=" African Daisy">African Daisy </label>
+    <br>
+    <input type="radio">
+    <label for="Shasta Daisy">Shasta Daisy </label>
+    <br>
+    <input type="radio">
+    <label for="Swan River Daisy">Swan River Daisy </label>
+    <br>
+    <input type="radio">
+    <label for="Argyranthemum">Argyranthemum </label>
+    <br>
+    <input type="radio">
+    <label for="Dimorphotheca">Dimorphotheca </label>
+    </div>
+
+    <h4 class="h4">Social Media link :</h4>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <br>
+    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+    <br>
+</body>
+</html>
